@@ -214,6 +214,14 @@ h2 {
     resize: none;
     height: 150px;
   }
+
+  .formulario textarea {
+    resize: none;
+    height: 150px;
+    width: 100%; 
+    box-sizing: border-box;
+    max-width: 210px; 
+}
   
   .formulario input[type="submit"] {
     background: #0d6efd;
