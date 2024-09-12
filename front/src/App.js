@@ -10,6 +10,7 @@ import HomePage from './pages/HomePage';
 import NosotrosPage from './pages/NosotrosPage';
 import PerdidosPage from './pages/PerdidosPage';
 import PublicadosPage from './pages/PublicadosPage';
+import ContactoPage from './pages/ContactoPage';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="/perdidos" element={<PerdidosPage />} />
           <Route path="/encontrados" element={<EncontradosPage />} />
           <Route path="/nosotros" element={<NosotrosPage />} />
+          <Route path="/contacto" element={<ContactoPage />} />
 
 
 

@@ -1,9 +1,8 @@
-import React from 'react';
-
 const HomePage = (props) => {
-    const handleRedirect = () => {
-        window.location.href = '/contacto.html'; // Asegúrate de que la ruta sea correcta
-    };
+    
+    const handleRedirect =() =>{
+ window.location.href = '/contacto'; 
+};
 
     return (
         <main className="holder">
@@ -34,7 +33,7 @@ const HomePage = (props) => {
                         <span className="cita">Dirección de Sanidad y Control Animal</span>
                         <p></p>
                         <div className="mb-3">
-                            <button type="button" className="btn btn-primary" onClick={handleRedirect}>
+                        <button type="button" className="btn btn-primary" onClick={handleRedirect}>
                                 Formulario de contacto
                             </button>
                         </div>

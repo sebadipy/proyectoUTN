@@ -44,7 +44,7 @@ const ContactoPage = (props) => {
 
                 <div className="holder">
                     <h2>Escanea el QR para acceder a nuestro ChatZoo</h2>
-                    <img src="img/qr.jpg" alt="Perdidos y Encontrados" width="100" />
+                    <img src="/qr.jpg" alt="Perdidos y Encontrados" width="100" />
                 </div>
             </section>
         </main>
