@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-
+import '../App.css';
+import { NavLink } from 'react-router-dom';
 
 const Nav = (props) => {
     return (
@@ -7,18 +7,14 @@ const Nav = (props) => {
         <nav>
             <div>
                 <ul>
-                    <li><Link to="/" >Inicio</Link></li>
-                    <li><Link to="/publicados">Animales Publicados</Link></li>
-                    <li><Link to="/perdidos">Denuncia Animal Perdido</Link></li>
-                    <li><Link to="/encontrados">Denuncia Animal Encontrado</Link></li>
-                    <li><Link to="/nosotros">Sobre el proyecto</Link></li>
-
+                    <li><NavLink to="/" className={({ isActive }) => (isActive ? 'activo' : undefined)}>Inicio</NavLink> </li>
+                    <li><NavLink to="/publicados" className={({ isActive }) => (isActive ? 'activo' : undefined)}>Animales Publicados</NavLink> </li>
+                    <li><NavLink to="/perdidos" className={({ isActive }) => (isActive ? 'activo' : undefined)}>Denuncia Animal Perdido</NavLink> </li>
+                    <li><NavLink to="/encontrados" className={({ isActive }) => (isActive ? 'activo' : undefined)}>Denuncia Animal Encontrado</NavLink> </li>
+                    <li><NavLink to="/nosotros" className={({ isActive }) => (isActive ? 'activo' : undefined)}>Sobre el proyecto</NavLink> </li>
                 </ul>
-
             </div>
-
         </nav>
     )
-
 }
 export default Nav;
